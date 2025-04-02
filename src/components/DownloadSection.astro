@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import googlePlayBadge from "../assets/google-play-badge.png";
+import iosDownloadBadge from "../assets/ios_download_badge.svg";
+---
+
+<section
+  id="download"
+  class="h-screen flex flex-col items-center justify-center bg-gray-100"
+>
+  <h2 class="text-4xl font-bold text-gray-900">DOWNLOAD</h2>
+  <p class="text-5xl text-black font-normal mt-4 max-w-2xl text-center">
+    아껴쓰고 나눠쓰는 나만의 창고
+  </p>
+  <p class="text-5xl text-black font-bold mt-4 max-w-2xl text-center">
+    바나나 창고
+  </p>
+  <div class="flex space-x-8 mt-8 items-center">
+    <a href="https://play.google.com/store/apps/details?id=kr.co.bananastorage">
+      <Image
+        src={googlePlayBadge}
+        alt="google play 다운로드"
+        class="h-16 w-auto"
+      />
+    </a>
+    <a href="https://itunes.apple.com/app/id6740690389">
+      <Image
+        src={iosDownloadBadge}
+        alt="app store 다운로드"
+        class="h-13 w-auto"
+      />
+    </a>
+  </div>
+</section>

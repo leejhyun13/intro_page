@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import mainLogo from "../assets/mainLogo.svg";
+import mainLogoW from "../assets/mainLogoW.svg";
+import intsaLogo from "../assets/logo-instagram.svg";
+import facebookLogo from "../assets/logo-facebook.svg";
+import twitterLogo from "../assets/logo-twitter.svg";
+import youtubeLogo from "../assets/logo-youtube.svg";
+---
+
+<footer class="flex flex-row bg-white justify-between px-8 py-8">
+  <div class="flex flex-col justify-center">
+    <Image src={mainLogo} alt="main logo" class="h-16 w-auto mb-4" />
+    <p class="text-black font-normal mb-1 ml-2">바나나창고 | 박재균</p>
+    <p class="text-black font-normal mb-1 ml-2">
+      서울특별시 서초구 신반포로45길 9-4
+    </p>
+    <p class="text-black font-normal mb-1 ml-2">
+      010-0000-0000 | jkp@nkstm.com
+    </p>
+  </div>
+  <div class="flex flex-col">
+    <p class="text-2xl font-semibold mb-4">SNS</p>
+    <div class="flex flex-row space-x-4">
+      <a href="https://www.instagram.com/">
+        <Image src={intsaLogo} alt="instagram" class="h-8 w-auto" />
+      </a>
+      <a href="https://www.youtube.com/">
+        <Image src={youtubeLogo} alt="youtube" class="h-8 w-auto" />
+      </a>
+    </div>
+  </div>
+</footer>

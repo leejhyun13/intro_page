@@ -2,7 +2,10 @@
 const { id, title, content } = Astro.props;
 ---
 
-<section id={id} class="h-screen flex flex-col items-center justify-center bg-gray-100">
-    <h2 class="text-4xl font-bold text-gray-900">{title}</h2>
-    <p class="text-lg text-gray-600 mt-4 max-w-2xl text-center">{content}</p>
-  </section>
+<section
+  id={id}
+  class="h-screen flex flex-col items-center justify-center bg-gray-100"
+>
+  <h2 class="text-4xl font-bold text-gray-900">{title}</h2>
+  <p class="text-lg text-gray-600 mt-4 max-w-2xl text-center">{content}</p>
+</section>
