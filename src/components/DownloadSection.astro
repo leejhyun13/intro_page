@@ -2,20 +2,18 @@
 import { Image } from "astro:assets";
 import googlePlayBadge from "../assets/google-play-badge.png";
 import iosDownloadBadge from "../assets/ios_download_badge.svg";
+import banana_logo from "../assets/banana_logo.svg";
 ---
 
 <section
   id="download"
-  class="h-screen flex flex-col items-center justify-center bg-gray-100"
+  class="h-screen flex flex-col items-center justify-center bg-white"
 >
-  <h2 class="text-4xl font-bold text-gray-900">DOWNLOAD</h2>
-  <p class="text-5xl text-black font-normal mt-4 max-w-2xl text-center">
-    아껴쓰고 나눠쓰는 나만의 창고
+  <Image src={banana_logo} alt="Banana Logo" class="h-32 w-auto" />
+  <p class="text-5xl text-black font-bold mt-16 max-w-3xl text-center">
+    신개념 물물교환, 지금 경험해보세요!
   </p>
-  <p class="text-5xl text-black font-bold mt-4 max-w-2xl text-center">
-    바나나 창고
-  </p>
-  <div class="flex space-x-8 mt-8 items-center">
+  <div class="flex space-x-8 mt-16 items-center">
     <a href="https://play.google.com/store/apps/details?id=kr.co.bananastorage">
       <Image
         src={googlePlayBadge}

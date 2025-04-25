@@ -1,17 +1,21 @@
 ---
 import { Image } from "astro:assets";
-import mainImg from "../assets/titleLogo.svg";
+import mainImg from "../assets/banana_logo.svg";
 ---
 
-<header class="fixed top-0 left-0 w-full bg-white bg-opacity-90 shadow-md">
+<header
+  class="w-full bg-white bg-opacity-90 shadow-md border-b border-gray-200"
+>
   <nav class="container mx-auto flex justify-between items-center py-4 px-6">
     <!-- 좌측 로고 -->
-    <Image src={mainImg} alt="Banana Warehouse" class="w-8" />
+    <Image src={mainImg} alt="Banana Warehouse" class="w-48" />
 
     <!-- 우측 네비게이션 메뉴 -->
     <ul class="flex space-x-6">
       <li>
-        <a href="#about" class="text-gray-700 hover:text-blue-500">About Us</a>
+        <a href="#download" class="text-gray-700 hover:text-blue-500">
+          Download
+        </a>
       </li>
       <li>
         <a href="#services" class="text-gray-700 hover:text-blue-500"
@@ -19,17 +23,7 @@ import mainImg from "../assets/titleLogo.svg";
         >
       </li>
       <li>
-        <a href="#contact" class="text-gray-700 hover:text-blue-500"
-          >Contact Us</a
-        >
-      </li>
-      <li>
-        <a
-          href="#download"
-          class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-        >
-          Download
-        </a>
+        <a href="#about" class="text-gray-700 hover:text-blue-500">About Us</a>
       </li>
     </ul>
   </nav>
