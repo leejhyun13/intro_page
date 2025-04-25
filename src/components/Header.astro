@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import mainImg from "../assets/banana_logo.svg";
+import mobileImg from "../assets/titleLogo.svg";
 ---
 
 <header
@@ -8,10 +9,14 @@ import mainImg from "../assets/banana_logo.svg";
 >
   <nav class="container mx-auto flex justify-between items-center py-4 px-6">
     <!-- 좌측 로고 -->
-    <Image src={mainImg} alt="Banana Warehouse" class="w-48" />
-
+    <div class="hidden sm:block">
+      <Image src={mainImg} alt="Banana Warehouse" class="w-48" />
+    </div>
+    <div class="block sm:hidden">
+      <Image src={mobileImg} alt="Banana Warehouse (Mobile)" class="w-8" />
+    </div>
     <!-- 우측 네비게이션 메뉴 -->
-    <ul class="flex space-x-6">
+    <ul class="flex space-x-4 text-sm max-[429px]:text-xs">
       <li>
         <a href="#download" class="text-gray-700 hover:text-blue-500">
           Download
