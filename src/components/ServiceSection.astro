@@ -6,6 +6,70 @@ import ServiceCarousel from "./ServiceCarousel.jsx";
   id="services"
   class="min-h-[calc(100vh)] flex flex-col items-center justify-center"
 >
+  <div class="flex flex-col justify-between h-screen w-screen">
+    <div
+      class="bg-white p-10 text-center flex flex-col justify-center items-center h-full"
+    >
+      <h3 class="text-7xl font-semibold max-[640px]:text-2xl">
+        더 많은 연결, 더 높은 매칭
+      </h3>
+      <div class="flex flex-col items-start">
+        <p class="mt-16 text-gray-600 text-3xl max-[640px]:text-sm">
+          물물교환은 상호간의 필요가 충족되어야 합니다.
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          저희는 1 : N 의 교환 방식을 도입하여
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          그 물건이 필요한 사람들로부터 제안을 받아
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          교환 기회를 넓힙니다.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex justify-center max-[640px]:overflow-hidden max-[640px]:h-[50%]"
+    >
+      <img
+        src="/service_1.png"
+        alt="Service 1"
+        class="w-2/3 object-contain max-[640px]:w-full"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col justify-between h-screen w-screen mt-16">
+    <div
+      class="bg-white p-10 text-center flex flex-col justify-center items-center h-full"
+    >
+      <h3 class="text-7xl font-semibold max-[640px]:text-2xl">
+        환경을 위한 지속 가능한 소비
+      </h3>
+      <div class="flex flex-col items-start">
+        <p class="mt-16 text-gray-600 text-3xl max-[640px]:text-sm">
+          버리기엔 아까운 물건이,
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          누군가에게는 꼭 필요한 물건이 될 수 있습니다.
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          교환을 통해 버리지 않고,
+        </p>
+        <p class="text-gray-600 text-3xl mt-2 max-[640px]:text-sm">
+          물건을 재사용하여 환경을 지켜주세요.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex justify-center max-[640px]:overflow-hidden max-[640px]:h-[50%]"
+    >
+      <img
+        src="/service_2.png"
+        alt="Service 1"
+        class="w-2/4 object-contain max-[640px]:w-full"
+      />
+    </div>
+  </div>
   <!-- React 기반 Swiper 컴포넌트 삽입 -->
-  <ServiceCarousel client:load />
+  <!-- <ServiceCarousel client:load /> -->
 </section>
